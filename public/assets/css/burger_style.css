@@ -1,0 +1,111 @@
+* {
+	background-color: #fef2e6;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 54px;
+  color: #2c3d23;
+}
+
+h2 {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 30px;
+  color: #682525;
+  line-height: 150%;
+}
+
+h3, li, label {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(74, 39, 8);
+}
+
+button, input[type=submit] {
+	background-color: #60844c;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+  line-height: 120%;
+	color: #e7dfdd;
+	border-style: none;
+	border-radius: 18px;
+	margin: 2px;
+  height: auto;
+	width: auto;
+}
+
+button:hover, input[type=submit]:hover {
+	background-color: #9e3838;
+}
+
+header {
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  height: 200px;
+  margin: auto;
+}
+
+input[type=text] {
+    border: 2px solid #682525;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    font-size: 18px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #9e3838;
+  outline: none;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(249, 240, 137);
+}
+
+ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.create-burger {
+  clear: both;
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#uneaten {
+  display: inline-block;
+  float: left;
+  width: 25%;
+	height: auto;
+  margin: 30px auto 0 22.5%;
+}
+
+#eaten {
+	display: inline-block;
+  float: left;
+	width: 25%;
+	height: auto;
+  margin: 30px auto 0 5%;
+}
+
+#eaten li {
+  background-color: rgba(249, 240, 137, 0.5);
+  color: rgba(74, 39, 8, 0.5);
+}

@@ -1,0 +1,40 @@
+<header>
+  <img src="assets/img/cat-on-burger.gif">
+  <h1>Pasta Burger</h1>
+  <h2>Cavatappi Cat wants you to eat pasta burgers! (and wafflewiches!)</h2>
+</header>
+
+<div id="uneaten">
+  <h3>Uneaten Burgers</h3>
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+        <li>
+          {{burger_name}}
+          <button class="eat-burger" data-id="{{id}}">Eat it!</button>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+<div id="eaten">
+  <h3>Eaten Burgers</h3>
+  <ul>
+    {{#each burgers}}
+      {{#if devoured}}
+        <li>
+          {{burger_name}}
+        </li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
+
+<form class="create-burger">
+  <div class="form-group">
+    <label for="tv-input">Add a Pasta Burger!</label><br>
+    <input type="text" id="burg"><br>
+    <input type="submit" value="Submit Pasta Burger">
+  </div>
+</form>
