@@ -22,8 +22,7 @@ $(function() {
     event.preventDefault();
 
     var newBurg = {
-      burger_name: $("#burg").val().trim(),
-      nom_date: null
+      burger_name: $("#burg").val().trim()
     };
 
     // Send the POST request.
