@@ -97,7 +97,7 @@ ul {
   border: 1px solid #2c3d23;
   border-radius: 12px;
   padding: 2px;
-  width: 30%;
+  width: 22.5%;
   margin: auto 5px auto 5px;
   font-size: 14px;
 }
@@ -109,14 +109,14 @@ ul {
 
 #uneaten {
   float: left;
-  width: 30%;
+  width: 35%;
 	height: auto;
-  margin: 30px auto 0 17.5%;
+  margin: 30px auto 0 12.5%;
 }
 
 #eaten {
   float: left;
-	width: 30%;
+	width: 35%;
 	height: auto;
   margin: 30px auto 0 5%;
 }
