@@ -54,19 +54,6 @@ img {
   margin: auto;
 }
 
-input[type=text] {
-    border: 2px solid #682525;
-    border-radius: 24px;
-    padding: 10px;
-    margin: 10px auto 10px auto;
-    font-size: 18px;
-}
-
-input[type=text]:focus {
-  border: 3px solid #9e3838;
-  outline: none;
-}
-
 li {
   padding: 5px;
   margin: 5px;
@@ -74,7 +61,7 @@ li {
 }
 
 ul {
-  list-style-position: inside;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -89,18 +76,43 @@ ul {
   font-size: 24px;
 }
 
+#burg {
+  border: 2px solid #682525;
+  border-radius: 24px;
+  padding: 10px;
+  margin: 10px auto 10px auto;
+  font-size: 18px;
+}
+
+#burg:focus {
+  border: 2px solid #9e3838;
+  outline: none;
+}
+
+#customer-input {
+  border: 1px solid #2c3d23;
+  border-radius: 12px;
+  padding: 2px;
+  width: 30%;
+  margin: auto 5px auto 5px;
+  font-size: 14px;
+}
+
+#customer-input:focus {
+  border: 1px solid #60844c;
+  outline: none;
+}
+
 #uneaten {
-  display: inline-block;
   float: left;
-  width: 25%;
+  width: 30%;
 	height: auto;
-  margin: 30px auto 0 22.5%;
+  margin: 30px auto 0 17.5%;
 }
 
 #eaten {
-	display: inline-block;
   float: left;
-	width: 25%;
+	width: 30%;
 	height: auto;
   margin: 30px auto 0 5%;
 }

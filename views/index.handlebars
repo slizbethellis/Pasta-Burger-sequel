@@ -10,8 +10,11 @@
     {{#each burgers}}
       {{#unless devoured}}
         <li>
-          {{burger_name}}
-          <button class="eat-burger" data-id="{{id}}">Eat it!</button>
+          {{id}}. {{burger_name}}
+          <form class="eat-burger">
+            <input type="text" id="customer-input" placeholder="Customer?">
+            <input type="submit" id="nom-update" data-id="{{id}}" value="Eat it!">
+          </form>
         </li>
       {{/unless}}
     {{/each}}
@@ -24,7 +27,7 @@
     {{#each burgers}}
       {{#if devoured}}
         <li>
-          {{burger_name}}
+          {{id}}. {{burger_name}} (Eaten by {{Customer.customer_name}})
         </li>
       {{/if}}
     {{/each}}
@@ -33,7 +36,7 @@
 
 <form class="create-burger">
   <div class="form-group">
-    <label for="tv-input">Add a Pasta Burger!</label><br>
+    <label for="burg">Add a Pasta Burger!</label><br>
     <input type="text" id="burg"><br>
     <input type="submit" value="Submit Pasta Burger">
   </div>

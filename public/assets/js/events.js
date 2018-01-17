@@ -1,20 +1,29 @@
 $(function() {
-  $(".eat-burger").on("click", function(event) {
-    var id = $(this).data("id");
-    var newNom = {
-      devoured: true
+  $(".eat-burger").on("submit", function(event) {
+    var id = $("#nom-update").data("id");
+    var customer = $("#customer-input").val().trim();
+    var newCust = {
+      customer_name: customer
     };
-
+    
     // Send the PUT request.
-    $.ajax("/api/burgers/" + id, {
-      type: "PUT",
-      data: newNom
-    }).then(
-      function() {
+    //$.ajax("/api/customers/", {
+    //  type: "POST",
+    //  data: newCust
+    //}).then(
+      $.ajax("/api/burgers/" + id, {
+        type: "PUT",
+        data: {
+          customer_name: customer,
+          BurgerId: id
+        }
+      }).then(
+        function() {
         // Reload the page to get the updated list
         location.reload();
-      }
-    );
+        }
+      );
+    //);
   });
 
   $(".create-burger").on("submit", function(event) {

@@ -14,5 +14,9 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+  Burger.associate = function(models) {
+    Burger.hasOne(models.Customer);
+  };
+
   return Burger;
 };
