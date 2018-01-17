@@ -10,8 +10,8 @@
     {{#each burgers}}
       {{#unless devoured}}
         <li>
-          {{id}}. {{burger_name}}
           <form class="eat-burger">
+            {{id}}. {{burger_name}}
             <input type="text" id="customer-input" placeholder="Customer?">
             <input type="submit" id="nom-update" data-id="{{id}}" value="Eat it!">
           </form>
