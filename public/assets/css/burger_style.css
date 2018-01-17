@@ -76,6 +76,10 @@ ul {
   font-size: 24px;
 }
 
+.eat-burger {
+  background-color: rgb(249, 240, 137);
+}
+
 #burg {
   border: 2px solid #682525;
   border-radius: 24px;
