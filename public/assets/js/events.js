@@ -1,5 +1,6 @@
 $(function() {
   $(".eat-burger").on("submit", function(event) {
+    event.preventDefault();
     var id = $("#nom-update").data("id");
     var customer = $("#customer-input").val().trim();
       $.ajax("/api/burgers/" + id, {
