@@ -2,15 +2,6 @@ $(function() {
   $(".eat-burger").on("submit", function(event) {
     var id = $("#nom-update").data("id");
     var customer = $("#customer-input").val().trim();
-    var newCust = {
-      customer_name: customer
-    };
-    
-    // Send the PUT request.
-    //$.ajax("/api/customers/", {
-    //  type: "POST",
-    //  data: newCust
-    //}).then(
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: {

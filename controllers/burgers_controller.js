@@ -10,7 +10,6 @@ router.get("*", function(req, res) {
     include: [db.Customer],
     order: [['burger_name']]
   }).then(function(dbPost) {
-    console.log(dbPost);
     var hbObject = {
       burgers: dbPost
     };
