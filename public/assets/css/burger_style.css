@@ -80,6 +80,10 @@ ul {
   background-color: rgb(249, 240, 137);
 }
 
+.eat-burger > .form-group {
+  background-color: rgb(249, 240, 137);
+}
+
 #burg {
   border: 2px solid #682525;
   border-radius: 24px;

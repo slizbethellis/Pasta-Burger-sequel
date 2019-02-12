@@ -2,13 +2,14 @@ $(function() {
   $(".eat-burger").on("submit", function(event) {
     event.preventDefault();
     var id = $("#nom-update").data("id");
-    var customer = $("#customer-input").val().trim();
+    var nomIt = {
+      BurgerId: id,
+      customer_name: $("#customer-input").val().trim()
+    };
+    // var customer = $("#customer-input").val().trim();
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: {
-          customer_name: customer,
-          BurgerId: id
-        }
+        data: nomIt
       }).then(
         function() {
         // Reload the page to get the updated list

@@ -11,9 +11,11 @@
       {{#unless devoured}}
         <li>
           <form class="eat-burger">
-            {{id}}. {{burger_name}}
-            <input type="text" id="customer-input" placeholder="Customer?">
-            <input type="submit" id="nom-update" data-id="{{id}}" value="Eat it!">
+            <div class="form-group">
+              {{id}}. {{burger_name}}
+              <input type="text" id="customer-input" placeholder="Customer?">
+              <input type="submit" id="nom-update" data-id="{{id}}" value="Eat it!">
+            </div>
           </form>
         </li>
       {{/unless}}

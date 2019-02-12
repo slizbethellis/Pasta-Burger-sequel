@@ -33,6 +33,7 @@ router.put("/api/burgers/:id", function(req, res) {
       }
     }).then(function(data) {
       res.json(data);
+      console.log(req.body);
     })
   );
 });
