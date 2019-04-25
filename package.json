@@ -17,13 +17,13 @@
   },
   "homepage": "https://github.com/slizbethellis/Pasta-Burger#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "fs": "0.0.1-security",
     "method-override": "^2.3.10",
-    "mysql2": "^1.5.1",
+    "mysql2": "^1.6.5",
     "path": "^0.12.7",
-    "sequelize": "^4.31.1"
+    "sequelize": "^4.43.2"
   }
 }
